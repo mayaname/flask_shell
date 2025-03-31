@@ -1,0 +1,8 @@
+{% for data in sample_data %}
+  <tr class="table_row">
+    <td class="table_cell">{{ data.title }}</td>
+    <td class="table_cell">{{ data.author }}</td>
+    <td class="table_cell">{{ data.body }}</td>
+    <td class="table_cell">{{ data.posted }}</td>
+  </tr>
+{% endfor %}

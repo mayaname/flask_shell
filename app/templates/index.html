@@ -1,0 +1,37 @@
+{% extends 'base_main.html'%}
+
+
+
+{% block head_content %} 
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/tables.css') }}">
+{% endblock %}
+  
+
+
+{% block main_content %}
+  <h1>{{ page_title }}</h1>
+
+  <h2>Hello, {{ user.username }}!</h2>
+  
+  <section class="section_table">
+    <table class="table_main">
+      <colgroup>
+        <col style="width: 30%;">
+        <col style="width: 15%;">
+        <col style="width: 40%;">
+        <col style="width: 15%;">
+      </colgroup>
+      <tr class="table_row-header">
+        <th class="table_cell">Title</th>
+        <th class="table_cell">Author</th>
+        <th class="table_cell">Post</th>
+        <th class="table_cell">Posted</th>
+      </tr>
+
+          <!-- Display table rows -->
+        {% include '_table_data.html' %}
+
+    </table>
+  </section>
+
+{% endblock %}
