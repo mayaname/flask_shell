@@ -27,26 +27,26 @@ def index():
             'title': 'Seasons Greetings',
             'author': 'John',
             'body': 'Merry Christmas everyone!',
-            'posted': '12/25/2024'
+            'posted': '12/25/2025'
 
         },
         {
             'title': 'Seasons Greetings',
             'author': 'Susan',
             'body': 'A merry Christmas to you too!',
-            'posted': '12/25/2024'
+            'posted': '12/25/2025'
         },
         {
             'title': 'Seasons Greetings',
             'author': 'Maya',
-            'body': 'And a happy Ney Year!',
-            'posted': '12/25/2024'
+            'body': 'And a Happy New Year!',
+            'posted': '12/30/2025'
         },
         {
             'title': 'Seasons Greetings',
             'author': 'Bob',
             'body': 'Happy holidays',
-            'posted': '12/26/2024'
+            'posted': '12/26/2025'
         }
     ]
     return render_template('index.html',
